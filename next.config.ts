@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
     ],
   },
   serverExternalPackages: ["sanity"],
+  turbopack: {},
   webpack: (config, { isServer }) => {
     // Handle Sanity modules properly
     if (!isServer) {

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { client, queries } from "@/sanity/lib/client";
 import { Speaker } from "@/types";
-import { Linkedin, Twitter, ExternalLink, Quote } from "lucide-react";
+import { CircleUserRound, MessageCircle, ExternalLink, Quote } from "lucide-react";
 
 export function Speakers() {
   const [speakers, setSpeakers] = useState<Speaker[]>([]);
@@ -169,7 +169,7 @@ export function Speakers() {
                       rel="noopener noreferrer"
                       className="p-2 bg-blue-600/20 hover:bg-blue-600/30 rounded-full transition-colors group"
                     >
-                      <Linkedin className="w-4 h-4 text-blue-400 group-hover:text-blue-300" />
+                      <CircleUserRound className="w-4 h-4 text-blue-400 group-hover:text-blue-300" />
                     </Link>
                   )}
                   {speaker.socialMedia?.twitter && (
@@ -179,7 +179,7 @@ export function Speakers() {
                       rel="noopener noreferrer"
                       className="p-2 bg-blue-400/20 hover:bg-blue-400/30 rounded-full transition-colors group"
                     >
-                      <Twitter className="w-4 h-4 text-blue-300 group-hover:text-blue-200" />
+                      <MessageCircle className="w-4 h-4 text-blue-300 group-hover:text-blue-200" />
                     </Link>
                   )}
                   {speaker.socialMedia?.website && (

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Image from "next/image";
-import { Mail, Linkedin, Github, Trophy, Users, Star } from "lucide-react";
+import { Mail, CircleUserRound, GitBranch, Trophy, Users, Star } from "lucide-react";
 import Link from "next/link";
 import { client, queries } from "@/sanity/lib/client";
 import { TeamMember as SanityTeamMember } from "@/types";
@@ -166,7 +166,7 @@ export default function TeamPage() {
                           rel="noopener noreferrer"
                           className="text-yellow-400 hover:text-blue-400 transition-colors"
                         >
-                          <Linkedin className="h-5 w-5" />
+                          <CircleUserRound className="h-5 w-5" />
                         </a>
                       )}
                     </div>
@@ -291,7 +291,7 @@ export default function TeamPage() {
                           rel="noopener noreferrer"
                           className="text-gray-400 hover:text-blue-400 transition-colors"
                         >
-                          <Linkedin className="h-4 w-4" />
+                          <CircleUserRound className="h-4 w-4" />
                         </a>
                       )}
                       {member.github && (
@@ -301,7 +301,7 @@ export default function TeamPage() {
                           rel="noopener noreferrer"
                           className="text-gray-400 hover:text-gray-300 transition-colors"
                         >
-                          <Github className="h-4 w-4" />
+                          <GitBranch className="h-4 w-4" />
                         </a>
                       )}
                     </div>

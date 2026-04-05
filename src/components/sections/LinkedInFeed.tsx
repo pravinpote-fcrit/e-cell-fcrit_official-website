@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import {
   ExternalLink,
   Heart,
-  MessageCircle,
   Share,
-  Linkedin,
+  MessageCircle,
+  CircleUserRound,
   Calendar,
   Tag,
 } from "lucide-react";
@@ -128,7 +128,7 @@ export function LinkedInFeed() {
         {/* Section Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-blue-500/20 rounded-full px-6 py-2 mb-8">
-            <Linkedin className="h-5 w-5 text-blue-400" />
+            <CircleUserRound className="h-5 w-5 text-blue-400" />
             <span className="text-blue-300 font-medium">LinkedIn Updates</span>
           </div>
 
@@ -263,7 +263,7 @@ export function LinkedInFeed() {
               }
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
             >
-              <Linkedin className="w-5 h-5 mr-2" />
+              <CircleUserRound className="w-5 h-5 mr-2" />
               Follow on LinkedIn
             </button>
           </div>

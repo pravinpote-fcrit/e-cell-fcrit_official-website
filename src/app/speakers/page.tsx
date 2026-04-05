@@ -8,8 +8,8 @@ import { Speaker } from "@/types";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import {
-  Linkedin,
-  Twitter,
+  CircleUserRound,
+  MessageCircle,
   ExternalLink,
   Quote,
   Award,
@@ -325,7 +325,7 @@ export default function SpeakersPage() {
                         rel="noopener noreferrer"
                         className="p-2 bg-blue-600/20 hover:bg-blue-600/30 rounded-full transition-colors group"
                       >
-                        <Linkedin className="w-4 h-4 text-blue-400 group-hover:text-blue-300" />
+                        <CircleUserRound className="w-4 h-4 text-blue-400 group-hover:text-blue-300" />
                       </Link>
                     )}
                     {speaker.socialMedia?.twitter && (
@@ -335,7 +335,7 @@ export default function SpeakersPage() {
                         rel="noopener noreferrer"
                         className="p-2 bg-blue-400/20 hover:bg-blue-400/30 rounded-full transition-colors group"
                       >
-                        <Twitter className="w-4 h-4 text-blue-300 group-hover:text-blue-200" />
+                        <MessageCircle className="w-4 h-4 text-blue-300 group-hover:text-blue-200" />
                       </Link>
                     )}
                     {speaker.socialMedia?.website && (

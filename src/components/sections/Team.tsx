@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { client, queries, urlFor } from "@/sanity/lib/client";
-import { Linkedin, Mail, Users, Award, ChevronDown } from "lucide-react";
+import { CircleUserRound, Mail, Users, Award, ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 interface SanityTeamMember {
@@ -268,7 +268,7 @@ export function Team() {
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-blue-400 transition-colors"
                     >
-                      <Linkedin className="h-4 w-4" />
+                      <CircleUserRound className="h-4 w-4" />
                     </a>
                   )}
                 </div>
